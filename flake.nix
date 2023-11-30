@@ -21,7 +21,7 @@
           src = pkgs.fetchzip {
             url =
               "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Monaspace.zip";
-            sha256 = "sha256-bfe5670d8dd98c51d911df7ea322f05f67141a20aaa667925bb1703de1a9b6c2";
+            sha256 = "sha256-tvlXseoScqB6rlzWaqArLd7n1i1+uElywmMoxZTIdoI=";
             stripRoot = false;
           };
           installPhase = ''
