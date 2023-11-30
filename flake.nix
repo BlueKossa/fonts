@@ -30,4 +30,5 @@
           '';
           meta = { description = "Monaspace NF"; };
         };
+      });
 }
