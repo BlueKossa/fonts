@@ -41,7 +41,7 @@
           };
           installPhase = ''
             mkdir -p $out/share/fonts
-            cp -R $src/fonts/BebasNeue\(2018\)ByDhamraType/otf/BebasNeue-Regular.otf $out/share/fonts/opentype/'';
+            cp -R $src/fonts/BebasNeue\(2018\)ByDhamraType/otf $out/share/fonts/opentype/'';
           meta = { description = "Bebas Neue"; };
         };
       });
