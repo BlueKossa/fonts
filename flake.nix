@@ -33,10 +33,10 @@
         packages.bebasneue = pkgs.stdenvNoCC.mkDerivation {
           name = "monaspace-font";
           dontConfigue = true;
-          src = pkgs.fetchzip {
+          src = pkgs.fetchurl {
             url =
-              "https://dl.dafont.com/dl/?f=bebas_neue";
-            sha256 = "sha256-tvlXseoScqB6rlzWaqArLd7n1i1+uElywmMoxZTIdoI=";
+              "https://github.com/dharmatype/Bebas-Neue/raw/refs/heads/master/fonts/BebasNeue(2018)ByDhamraType/ttf/BebasNeue-Regular.ttf";
+            sha256 = "";
             stripRoot = false;
           };
           installPhase = ''
