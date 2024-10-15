@@ -36,12 +36,12 @@
           dontConfigue = true;
           src = pkgs.fetchzip {
             url =
-              "https://dl.dafont.com/dl/?f=bebas_neue";
+              "https://dn.freefontsfamily.org/download/Bebas-Neue-Font/";
             sha256 = "";
           };
           installPhase = ''
             mkdir -p $out/share/fonts
-            cp -R $src $out/share/fonts/truetype/
+            cp -R $src $out/share/fonts/opentype/
           '';
           meta = { description = "Bebas Neue"; };
         };
