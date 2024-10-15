@@ -30,14 +30,14 @@
           '';
           meta = { description = "Monaspace NF"; };
         };
+
         packages.bebasneue = pkgs.stdenvNoCC.mkDerivation {
-          name = "monaspace-font";
+          name = "bebas-neue-font";
           dontConfigue = true;
           src = pkgs.fetchurl {
             url =
               "https://github.com/dharmatype/Bebas-Neue/raw/refs/heads/master/fonts/BebasNeue(2018)ByDhamraType/ttf/BebasNeue-Regular.ttf";
             sha256 = "";
-            stripRoot = false;
           };
           installPhase = ''
             mkdir -p $out/share/fonts
