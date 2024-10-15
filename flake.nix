@@ -37,7 +37,7 @@
           src = pkgs.fetchurl {
             url =
               "https://raw.githubusercontent.com/dharmatype/Bebas-Neue/refs/heads/master/fonts/BebasNeue(2018)ByDhamraType/otf/BebasNeue-Regular.otf";
-            sha256 = "";
+            sha256 = "sha256-AB77yfYqTBw63o6uTBT0EIi8Q+ioSSi9G+hDllKA3J8=";
           };
           installPhase = ''
             mkdir -p $out/share/fonts
