@@ -30,5 +30,20 @@
           '';
           meta = { description = "Monaspace NF"; };
         };
+        packages.bebasneue = pkgs.stdenvNoCC.mkDerivation {
+          name = "monaspace-font";
+          dontConfigue = true;
+          src = pkgs.fetchzip {
+            url =
+              "https://dl.dafont.com/dl/?f=bebas_neue";
+            sha256 = "sha256-tvlXseoScqB6rlzWaqArLd7n1i1+uElywmMoxZTIdoI=";
+            stripRoot = false;
+          };
+          installPhase = ''
+            mkdir -p $out/share/fonts
+            cp -R $src $out/share/fonts/opentype/
+          '';
+          meta = { description = "Bebas Neue"; };
+        };
       });
 }
