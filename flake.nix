@@ -34,10 +34,10 @@
         packages.bebasneue = pkgs.stdenvNoCC.mkDerivation {
           name = "bebas-neue-font";
           dontConfigue = true;
-          src = pkgs.fetchurl {
+          src = pkgs.fetchzip {
             url =
-              "https://github.com/dharmatype/Bebas-Neue/raw/refs/heads/master/fonts/BebasNeue(2018)ByDhamraType/ttf/BebasNeue-Regular.ttf";
-            sha256 = "sha256-CORiOAUQLYGfWGAeRuNFZIhGB142OyzrIzE8LRyD7HM=";
+              "https://dl.dafont.com/dl/?f=bebas_neue";
+            sha256 = "";
           };
           installPhase = ''
             mkdir -p $out/share/fonts
