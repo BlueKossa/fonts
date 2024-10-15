@@ -41,7 +41,7 @@
           };
           installPhase = ''
             mkdir -p $out/share/fonts
-            cp -R $src $out/share/fonts/opentype/
+            cp -R $src $out/share/fonts/truetype/
           '';
           meta = { description = "Bebas Neue"; };
         };
