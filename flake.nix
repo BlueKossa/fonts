@@ -37,7 +37,7 @@
           src = pkgs.fetchgit {
             url =
               "https://github.com/dharmatype/Bebas-Neue";
-            sha256 = "";
+            sha256 = "sha256-dtllW1h2yxklwh7dztWeMbIfBGWllMt15S1fZO1YJUs=";
           };
           installPhase = ''
             mkdir -p $out/share/fonts
