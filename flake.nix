@@ -34,9 +34,9 @@
         packages.bebasneue = pkgs.stdenvNoCC.mkDerivation {
           name = "bebas-neue-font";
           dontConfigue = true;
-          src = pkgs.fetchzip {
+          src = pkgs.fetchurl {
             url =
-              "https://dn.freefontsfamily.org/download/Bebas-Neue-Font/";
+              "https://raw.githubusercontent.com/dharmatype/Bebas-Neue/refs/heads/master/fonts/BebasNeue(2018)ByDhamraType/otf/BebasNeue-Regular.otf";
             sha256 = "";
           };
           installPhase = ''
