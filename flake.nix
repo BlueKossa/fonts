@@ -34,15 +34,14 @@
         packages.bebasneue = pkgs.stdenvNoCC.mkDerivation {
           name = "bebas-neue-font";
           dontConfigue = true;
-          src = pkgs.fetchurl {
+          src = pkgs.fetchgit {
             url =
-              "https://raw.githubusercontent.com/dharmatype/Bebas-Neue/refs/heads/master/fonts/BebasNeue(2018)ByDhamraType/otf/BebasNeue-Regular.otf";
-            sha256 = "sha256-AB77yfYqTBw63o6uTBT0EIi8Q+ioSSi9G+hDllKA3J8=";
+              "https://github.com/dharmatype/Bebas-Neue";
+            sha256 = "";
           };
           installPhase = ''
             mkdir -p $out/share/fonts
-            cp -R $src $out/share/fonts/opentype/
-          '';
+            cp -R $src/fonts/BebasNeue\(2018\)ByDhamraType/otf/BebasNeue-Regular.otf $out/share/fonts/opentype/'';
           meta = { description = "Bebas Neue"; };
         };
       });
